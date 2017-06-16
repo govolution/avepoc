@@ -5,4 +5,5 @@ avepoc
 - for deepsec 2014
 - for reading more check out the slides
 - and: http://govolution.de/blog/wp-content/uploads/avevasion_pentestmag.pdf
-- update 2017 with PoC for psexec and metasploit 
+- update 2017 with PoC for psexec and metasploit
+- example for shellcode binder with msf alphamixed encoder
