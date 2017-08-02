@@ -10,3 +10,4 @@ avepoc
 Would you like to know more?
 - https://govolutionde.files.wordpress.com/2014/05/avevasion_pentestmag.pdf
 - https://deepsec.net/docs/Slides/2014/Why_Antivirus_Fails_-_Daniel_Sauder.pdf
+- https://govolution.wordpress.com/
