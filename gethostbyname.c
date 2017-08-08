@@ -7,7 +7,6 @@
 
 WSADATA wsaData;
 WORD version;
-int error;
 
 int main(int argc, char **argv) {
 
