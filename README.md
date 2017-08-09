@@ -6,6 +6,7 @@ avepoc
 - for reading more check out the slides
 - update 2017 with PoC for psexec and metasploit
 - example for shellcode binder with msf alphamixed encoder
+- and more...
 
 Would you like to know more?
 - https://govolutionde.files.wordpress.com/2014/05/avevasion_pentestmag.pdf
