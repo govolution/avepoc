@@ -1,5 +1,5 @@
 // compile:
-// wine gcc -m32  psexecservice.c
+// wine gcc -m32 psexecservice.c
 
 #include <windows.h>
 #include <stdio.h>
