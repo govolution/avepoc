@@ -19,10 +19,9 @@ unsigned char buf[] =
 
 int main(int argc, char **argv)
 {
-void *ptr = mmap(0, 0x1000, PROT_WRITE|PROT_READ|PROT_EXEC, MAP_ANON | MAP_PRIVATE, -1, 0);
-//printf("ret: 0x%x",ptr);
-memcpy(ptr,buf,sizeof buf);
-void (*fp)() = (void (*)())ptr;
-fp();
+	void *ptr = mmap(0, 0x1000, PROT_WRITE|PROT_READ|PROT_EXEC, MAP_ANON | MAP_PRIVATE, -1, 0);
+	memcpy(ptr,buf,sizeof buf);
+	void (*fp)() = (void (*)())ptr;
+	fp();
 
 }
